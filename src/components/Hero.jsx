@@ -5,42 +5,43 @@ import GetStarted from "./GetStarted";
 import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
- useGSAP(()=>{
-   gsap.fromTo(".--hero-left",{
-    x:-50,
-    duration:0.5
-   },{
-    x:0,
-    
-   })
+  useGSAP(() => {
+    gsap.fromTo(".--hero-left", {
+      x: -50,
+      duration: 0.5
+    }, {
+      x: 0,
 
-   gsap.fromTo(".--hero-right",{
-    x:50,
-    duration:0.5
-   },{
-    x:0,
-    
-   })
+    })
 
-   gsap.fromTo(".--first-get-started", {
-    y: -220,
-    x: 50,
-    duration: 1
-  }, {
-    y: 0,
-    x: 0,
-    duration: 1,
-    ease: "bounce.out" // Adds the bounce effect at the end
-});
+    gsap.fromTo(".--hero-right", {
+      x: 50,
+      duration: 0.5
+    }, {
+      x: 0,
+
+    })
+
+    gsap.fromTo(".--first-get-started", {
+      y: -220,
+      x: 50,
+      duration: 1
+    }, {
+      y: 0,
+      x: 0,
+      duration: 1,
+      ease: "bounce.out" 
+    });
 
 
- })
+  })
 
 
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
 
       {/*  creating the left part of the hero section */}
+
 
       <div className={`--hero-left flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
 
@@ -60,7 +61,7 @@ const Hero = () => {
             <span className="text-gradient">Generation</span>{" "}
           </h1>
           <div className="--first-get-started ss:flex hidden md:mr-4 mr-0">
-            <GetStarted/>
+            <GetStarted />
           </div>
         </div>
 

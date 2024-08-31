@@ -5,6 +5,7 @@ import GetStarted from "./GetStarted";
 import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
+
   useGSAP(() => {
     gsap.fromTo(".--hero-left", {
       x: -50,
@@ -51,6 +52,7 @@ const Hero = () => {
             <span className="text-white">20%</span> Discount For{" "}
             <span className="text-white">1 Month</span> Account
           </p>
+          
         </div>
 
 

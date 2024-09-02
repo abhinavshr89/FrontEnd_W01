@@ -1,6 +1,6 @@
 import { feedback } from "../constants";
 import styles from "../style";
-import FeedbackCard from "./FeedbackCard"; // Ensure this path and case are correct
+import Card from "./Card";
 import { motion } from 'framer-motion';
 
 const Testimonials = () => {

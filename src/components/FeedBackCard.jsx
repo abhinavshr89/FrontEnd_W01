@@ -1,3 +1,4 @@
+import React from "react";
 import { quotes } from "../assets";
 import {motion} from 'framer-motion'
 const FeedbackCard = ({ content, name, title, img }) => (

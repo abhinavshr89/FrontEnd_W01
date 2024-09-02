@@ -7,6 +7,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
+
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
@@ -32,9 +33,10 @@ const Navbar = () => {
           onClick={() => setToggle(!toggle)}
         />
 
+        {/* Navbar  */}
         <div
           className={`${!toggle ? "hidden" : "flex"
-            } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+            } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col gap-5">
             {navLinks.map((nav, index) => (
@@ -50,6 +52,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+
       </div>
     </nav>
   );
